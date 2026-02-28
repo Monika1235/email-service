@@ -31,45 +31,4 @@ public class RabbitConfig {
                 .to(accountExchange)
                 .with(ROUTING_KEY);
     }
-    
-//    // ✅ Modern JSON Converter
-//    @Bean
-//    JacksonJsonMessageConverter messageConverter() {
-//        return new JacksonJsonMessageConverter();
-//    }
-//    
-//    @Bean
-//    public SimpleRabbitListenerContainerFactory rabbitListenerContainerFactory(
-//            ConnectionFactory connectionFactory,
-//            JacksonJsonMessageConverter jacksonMessageConverter) {
-//
-//        SimpleRabbitListenerContainerFactory factory =
-//                new SimpleRabbitListenerContainerFactory();
-//
-//        factory.setConnectionFactory(connectionFactory);
-//        factory.setMessageConverter(jacksonMessageConverter);
-//
-//        return factory;
-//    }
-//    
-//    @Bean
-//    public MappingJackson2MessageConverter jacksonMessageConverter() {
-//        return new MappingJackson2MessageConverter();
-//    }
-//
-//    // 🔹 Listener container factory
-//    @Bean
-//    public SimpleRabbitListenerContainerFactory rabbitListenerContainerFactory(
-//            ConnectionFactory connectionFactory,
-//            MappingJackson2MessageConverter jacksonMessageConverter) {
-//
-//        SimpleRabbitListenerContainerFactory factory =
-//                new SimpleRabbitListenerContainerFactory();
-//
-//        factory.setConnectionFactory(connectionFactory);
-//        factory.setMessageConverter(jacksonMessageConverter);
-//
-//        return factory;
-//    }
-
 }
