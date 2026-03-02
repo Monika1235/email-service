@@ -1,4 +1,5 @@
 Step 1 — Start RabbitMQ
+-----------------------
 
 If using Docker:
 docker run -d --hostname rabbit-host \
@@ -15,8 +16,10 @@ If RabbitMQ is already installed locally:
 sudo systemctl start rabbitmq-server
 
 Step 2 - Run Application
+------------------------
 
 Step 3 - Verify Queue Created
+-----------------------------
 
 Go to:
 http://localhost:15672
@@ -26,7 +29,8 @@ Queues → account.created.queue
 
 If exists → good.
 
-Step 4 - Now run your auth-service and create an account.
+Step 4 - Now run your auth-service and create an account
+--------------------------------------------------------
 
 You should see in email-service logs:
 Received message: {...}
